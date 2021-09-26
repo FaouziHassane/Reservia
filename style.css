@@ -1,0 +1,464 @@
+@font-face {
+    font-family: "Raleway";
+    src: url(static/Raleway-Regular.ttf);
+}
+
+body {
+    margin: auto;
+    width: 96%;
+}
+
+h1, h2, h3, p, a {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+}
+
+/*Header : Menu de navigation */
+
+
+#logo-haut {
+    cursor: pointer;
+    margin-right: auto;
+}   
+
+.menu-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    
+    } 
+
+.menu-nav a {
+    color: inherit;
+    margin-left: 2px;
+    text-decoration: none;
+    padding: 1.5rem;
+    border-top: 2px solid transparent;
+}
+
+.menu-nav a:hover {
+    border-top-color: #0065fc;
+    color: #0065fc;  
+}
+
+.inscrire a {
+    color: blue;
+}
+
+.nav {
+    display: flex;
+}
+
+@media (max-width: 800px) {
+    .nav {
+        order: 1;
+        width: 100%;
+        display: flex;
+    }
+
+    .nav a {
+        width: 50%;
+        text-align: center;
+    }
+}
+
+/*Formulaire de recherche*/
+
+.form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.form i {
+    padding: 1rem;
+    background-color:lightgray;
+    border: 1px solid lightgray;
+    border-radius: 15px 0 0 15px;
+}
+
+.search {
+    padding: 1rem;
+    padding-right: 3px;
+    border: 1px solid lightgray;
+}
+
+.submit {
+    padding: 0.9rem;
+    border-radius: 0 15px 15px 0;
+    background-color: #0065fc;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid lightgray;
+}
+
+.search::placeholder {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+}
+
+.fas.fa-search {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .submit {
+        display: none;
+    }
+
+    .fas.fa-search {
+        display: inline;
+        border-radius: 15px;
+        background-color: #0065fc;
+        color: white;
+    }
+}
+
+/* Filtres */
+
+.filtre-list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.filtre i {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    background-color: lightblue;
+    color: blue;
+    margin: -2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filtre {
+    display: flex;
+    align-items: center;
+    border: 2px solid lightgrey;
+    border-radius: 2rem;
+    padding-right: 1.2rem;
+    font-weight: bold;
+    font-family: "Raleway";
+    cursor: pointer;
+}
+
+.filtre:hover {
+    background-color: lightgrey;
+    transform: scale(1.02);
+}
+
+/*Infos message*/
+
+.infos-message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+.infos-message i {
+    color: blue;
+    border-radius: 50%;
+    border: 1px solid lightgrey;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* HOTELS */
+
+
+#hebergements {
+    display: flex;
+}
+
+    /* Hôtels à Marseille */
+
+    .hebergement {
+        
+        flex-basis: 66%;
+        height: 650px;
+        margin-right: 0.5%;
+        border-radius: 1.5rem;
+        background-color: #f2f2f2;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    .part2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        position: relative;
+        flex-direction: row;
+        
+    }
+
+    .hotel {
+        margin: 1%;
+        padding: 0.5%;
+        background-color: white;
+        border-radius: 1.5rem;
+        flex-basis: 30%;
+        box-shadow: 0 0 16px gray;
+    }
+
+    @media (max-width: 800px) {
+        .part2 {
+            flex-direction: column;
+
+        }
+    }
+
+    .hotel img {
+        border-radius: 1.5rem 1.5rem 0 0;
+        cursor: pointer;
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+    }
+
+    .hotel a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .hebergement h1 {
+        padding-left: 1%;
+    }
+
+    .part2 h3, p {
+        padding-left: 2%;
+    }
+
+    .part2 p {
+        font-weight: normal;
+    }
+
+    .afficher-plus {
+        text-decoration: none;
+        color: black;
+        padding-left: 0.5rem;
+    }
+
+    .hotel:hover {
+        -webkit-transform: scale(1.05); /* Safari et Chrome */
+        -moz-transform: scale(1.05); /* Firefox */
+        -ms-transform: scale(1.05); /* Internet Explorer 9 */
+        -o-transform: scale(1.05); /* Opera */
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+    .etoiles {
+        margin: 2%;
+    }
+
+    .blue {
+        color: #0065fc;
+    } 
+
+    .grey {
+        color: lightgray;
+    }
+
+    /* Hôtels Populaires */
+
+    .populaire {
+
+        flex-basis: 33%;
+        height: 650px;
+        border-radius: 1.5rem;
+        background-color: #f2f2f2;
+        padding: 0 20px 0 20px;
+        margin-bottom: 2%;
+    }
+
+    .populaire h1 {
+        padding-left: 1%;
+    }
+
+    .part3 {
+        position: relative;
+    }
+
+    .part3 p {
+        font-weight: normal;
+    }
+
+    .hotel2 {
+        
+        width: 100%;
+        background: white;
+        border-radius: 20px;
+        padding: 3px;
+        box-sizing: border-box;
+        margin: 0px 0px 30px 0px;
+        height: 165px;
+        box-shadow: 0 0 16px gray;
+    }
+
+    .hotel2 img {
+
+        background-color: white;
+        transition-duration: 0.1s;
+        cursor: pointer;
+        float: left;
+        width: 35%;
+        height: 92%;
+        border-radius: 15px 0 0 15px;
+        margin: 2px 15px 2px 0px;
+        object-fit: cover;
+    }
+
+    .hotel2 a {
+        text-decoration: none;
+        color: black;
+    }
+ 
+    .hotel2:hover {
+        -webkit-transform: scale(1.05); /* Safari et Chrome */
+        -moz-transform: scale(1.05); /* Firefox */
+        -ms-transform: scale(1.05); /* Internet Explorer 9 */
+        -o-transform: scale(1.05); /* Opera */
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+    @media (max-width : 800px) {
+        #liste-appartement {
+            flex-direction: column-reverse;
+        }
+
+
+    }
+
+/* ACTIVITES */
+
+#activites {
+    flex-basis: 100%;
+  }
+
+  .container-activite {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    height: 498px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    box-sizing: border-box;
+  }
+  
+  .bloc-activite {
+    width: 23%;
+  }
+  
+  .Activite {
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 16px gray;
+  }
+  
+  .Activite:hover {
+    /* L'image est zoomé au survol */
+  
+    -webkit-transform: scale(1.05); /* Safari et Chrome */
+    -moz-transform: scale(1.05); /* Firefox */
+    -ms-transform: scale(1.05); /* Internet Explorer 9 */
+    -o-transform: scale(1.05); /* Opera */
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  .titre-section {
+    color: black;
+    font-size: 1.3em;
+  }
+  
+  .Activite img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1.5rem 1.5rem 0 0;
+  }
+
+  .Activite a {
+      text-decoration: none;
+      color: black;
+  }
+  
+  .activite1et4img {
+    height: 440px;
+  }
+  
+  .activite2img {
+    height: 220px;
+  }
+  
+  .activite3img {
+    height: 120px;
+  }
+  
+  .activite5img {
+    height: 165px;
+  }
+  
+  .activite6img {
+    height: 165px;
+  }
+  
+  .nom-activite {
+    padding: 0 0px 5px 20px;
+  }
+
+  .Activite2 {
+    margin: 0px 0px 30px;
+  }
+  
+  .Activite5 {
+    margin: 0px 0px 40px;
+  }
+
+
+/* Partie Footer */
+
+  footer {
+    background-color: #f2f2f2;
+  }
+  
+  .bloc-footer {
+    display: flex;
+    max-width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  
+  .inside-bloc {
+    width: 40%;
+  }
+  
+  .titre-footer {
+    display: block;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  
+  .inside-bloc a {
+    text-decoration: none;  
+    color: black;
+    display: block;
+    margin: 15px 0;
+    font-weight: normal;
+  }
+
