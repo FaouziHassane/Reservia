@@ -128,6 +128,8 @@ h1, h2, h3, p, a {
 
 .filtre:hover {
     background-color: lightgrey;
+    -webkit-transform: scale(1.05); /* Chrome */
+    -moz-transform: scale(1.05); /* Firefox */
     transform: scale(1.05);
     cursor: pointer;
 }
@@ -232,6 +234,8 @@ h1, h2, h3, p, a {
     }
 
     .hotel:hover {
+        -webkit-transform: scale(1.05); /* Chrome */
+        -moz-transform: scale(1.05); /* Firefox */
         transform: scale(1.05);
         cursor: pointer;
     }
@@ -299,6 +303,8 @@ h1, h2, h3, p, a {
     }
  
     .hotel2:hover {
+        -webkit-transform: scale(1.05); /* Chrome */
+        -moz-transform: scale(1.05); /* Firefox */
         transform: scale(1.05);
         cursor: pointer;
     }
@@ -338,6 +344,8 @@ h1, h2, h3, p, a {
   }
 
   .Activite:hover {
+    -webkit-transform: scale(1.05); /* Chrome */
+    -moz-transform: scale(1.05); /* Firefox */
     transform: scale(1.05);
     cursor: pointer;
   }
