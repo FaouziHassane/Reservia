@@ -3,6 +3,12 @@
     src: url(static/Raleway-Regular.ttf);
 }
 
+* {
+    -webKit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
     margin: auto;
     width: 96%;
