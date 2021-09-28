@@ -540,6 +540,12 @@ footer {
   .filtre {
       padding: 0px;
   }
+  
+    /* Hôtels Populaires */
+
+    .info-image h3, p {
+        margin: 3%;
+    }
 }
 
 
