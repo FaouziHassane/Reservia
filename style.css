@@ -4,14 +4,14 @@
 }
 
 * {
-    -webKit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+    -webKit-box-sizing: border-box; /* Chrome */
+    -moz-box-sizing: border-box;  /* Firefox */
     box-sizing: border-box;
 }
 
 body {
-    margin: auto;
     width: 96%;
+    margin: auto;
 }
 
 h1, h2, h3, p, a {
@@ -558,5 +558,4 @@ footer {
 /* Grand écran */
 
 @media screen and (max-width: 1600px) {
-
 }
