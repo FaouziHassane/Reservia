@@ -483,6 +483,10 @@ footer {
             flex-direction: column;
     }
 
+    .hotel p {
+        margin: 3px;
+    }
+
     /* Activites */
 
     .containerActivites {
