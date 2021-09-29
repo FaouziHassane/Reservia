@@ -436,7 +436,7 @@ footer {
 /* Responsive Mobile */
 
 
-@media (max-width: 760px) {
+@media screen and (max-width: 760px) {
 
     /* Menu navigation */
 
@@ -527,7 +527,7 @@ footer {
 
 /* Responsive Tablette */
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
     /* Titre haut de page */
 
@@ -557,4 +557,6 @@ footer {
 
 /* Grand écran */
 
-@media (max-width: 1600px) {}
+@media screen and (max-width: 1600px) {
+
+}
