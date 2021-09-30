@@ -151,7 +151,7 @@ h1, h2, h3, p, a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 0.5rem;
+    margin-right: 5px;
 }
 
 .filtre {
@@ -205,18 +205,13 @@ h1, h2, h3, p, a {
 
 
 #hebergements {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 }
 
     /* Hôtels à Marseille */
 
     .hebergement {
-        
-        -ms-flex-preferred-size: 66%;
-        
-            flex-basis: 66%;
+        flex-basis: 66%;
         height: 650px;
         margin-right: 0.5%;
         border-radius: 1.5rem;
@@ -226,13 +221,9 @@ h1, h2, h3, p, a {
     }
 
     .part2 {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     .part2 img {
@@ -240,8 +231,7 @@ h1, h2, h3, p, a {
         cursor: pointer;
         width: 100%;
         height: 120px;
-        -o-object-fit: cover;
-           object-fit: cover;
+        object-fit: cover;
     }
 
     .hotel {
@@ -249,11 +239,9 @@ h1, h2, h3, p, a {
         padding: 0.5%;
         background-color: white;
         border-radius: 1.5rem;
-        -ms-flex-preferred-size: 30%;
-            flex-basis: 30%;
-        -webkit-box-shadow: 0 0 16px gray;
-                box-shadow: 0 0 16px gray;
-    
+        flex-basis: 30%;
+        box-shadow: 0 0 16px gray;
+        padding-bottom: 10px;
     }
 
     .hotel a {
@@ -292,19 +280,14 @@ h1, h2, h3, p, a {
     }
 
     .hotel:hover {
-        -webkit-transform: scale(1.05);
-            -ms-transform: scale(1.05);
-                transform: scale(1.05);
+        transform: scale(1.05);
         cursor: pointer;
     }
 
     /* Hôtels Populaires */
 
     .populaire {
-
-        -ms-flex-preferred-size: 33%;
-
-            flex-basis: 33%;
+        flex-basis: 33%;
         height: 650px;
         border-radius: 1.5rem;
         background-color: #f2f2f2;
@@ -313,8 +296,6 @@ h1, h2, h3, p, a {
     }
 
     .titre-populaire {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         -webkit-box-align: center;
             -ms-flex-align: center;
@@ -382,31 +363,20 @@ h1, h2, h3, p, a {
 
 /* ACTIVITES */
 
-
 #Activite {
     width: 80%;
   }
   
   .containerActivites {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-line-pack: justify;
-        align-content: space-between;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
     height: 495px;
     margin-top: 2%;
     margin-bottom: 6%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
   }
   
   .blocActivite {
@@ -416,8 +386,7 @@ h1, h2, h3, p, a {
   .Activite {
     background-color: white;
     border-radius: 1.5rem;
-    -webkit-box-shadow: 0 0 16px gray;
-            box-shadow: 0 0 16px gray;
+    box-shadow: 0 0 16px gray;
   }
   
   .Activite a {
@@ -426,9 +395,7 @@ h1, h2, h3, p, a {
   }
 
   .Activite:hover {
-    -webkit-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-            transform: scale(1.05);
+    transform: scale(1.05);
     cursor: pointer;
   }
   
@@ -440,8 +407,7 @@ h1, h2, h3, p, a {
   
   .Activite img {
     width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border-radius: 1.5rem 1.5rem 0 0;
   }
   
@@ -476,7 +442,6 @@ h1, h2, h3, p, a {
   .Activite5 {
     margin: 0px 0px 92px;
   }
-
 
 /* FOOTER */
 
@@ -555,7 +520,6 @@ footer {
     /* Filtres */    
 
     .filtre-list {
-        display: -ms-grid;
         display: grid;
         padding: 1%;
     }
@@ -644,16 +608,10 @@ footer {
     /* FILTRES */
 
   .filtre-list {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     width: 100%;
   }
 
-  .filtre {
-      padding: 0px;
-  }
-  
     /* Hôtels Populaires */
 
     .info-image h3, p {
