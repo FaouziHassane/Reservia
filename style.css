@@ -4,8 +4,6 @@
 }
 
 * {
-    -webKit-box-sizing: border-box; /* Chrome */
-    -moz-box-sizing: border-box;  /* Firefox */
     box-sizing: border-box;
 }
 
@@ -27,10 +25,17 @@ h1, h2, h3, p, a {
 }   
 
 .menu-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-top: 0.5%;
     
     } 
@@ -53,6 +58,8 @@ h1, h2, h3, p, a {
 }
 
 .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -60,8 +67,12 @@ h1, h2, h3, p, a {
 /*Formulaire de Recherche*/
 
 .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 0.5%;
 }
 
@@ -89,6 +100,24 @@ h1, h2, h3, p, a {
     border: 1px solid #0065fc;   
 }
 
+.search::-webkit-input-placeholder {
+    font-size: 120%;
+    font-weight: bold;
+    color: black;
+}
+
+.search::-moz-placeholder {
+    font-size: 120%;
+    font-weight: bold;
+    color: black;
+}
+
+.search:-ms-input-placeholder {
+    font-size: 120%;
+    font-weight: bold;
+    color: black;
+}
+
 .search::placeholder {
     font-size: 120%;
     font-weight: bold;
@@ -102,10 +131,15 @@ h1, h2, h3, p, a {
 /* Filtres */
 
 .filtre-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 2rem;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .filtre i {
@@ -115,14 +149,24 @@ h1, h2, h3, p, a {
     background-color: lightblue;
     color: blue;
     margin: -2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .filtre {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border: 2px solid lightgrey;
     border-radius: 2rem;
     padding-right: 1.2rem;
@@ -133,17 +177,20 @@ h1, h2, h3, p, a {
 
 .filtre:hover {
     background-color: lightgrey;
-    -webkit-transform: scale(1.05); /* Chrome */
-    -moz-transform: scale(1.05); /* Firefox */
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
     cursor: pointer;
 }
 
 /*Infos Message*/
 
 .infos-message {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 1rem;
     margin-bottom: 1%;
 }
@@ -154,15 +201,23 @@ h1, h2, h3, p, a {
     border: 1px solid lightgrey;
     width: 2rem;
     height: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 /* HOTELS */
 
 
 #hebergements {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -170,7 +225,9 @@ h1, h2, h3, p, a {
 
     .hebergement {
         
-        flex-basis: 66%;
+        -ms-flex-preferred-size: 66%;
+        
+            flex-basis: 66%;
         height: 650px;
         margin-right: 0.5%;
         border-radius: 1.5rem;
@@ -180,9 +237,13 @@ h1, h2, h3, p, a {
     }
 
     .part2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 
     .part2 img {
@@ -190,7 +251,8 @@ h1, h2, h3, p, a {
         cursor: pointer;
         width: 100%;
         height: 120px;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
     }
 
     .hotel {
@@ -198,7 +260,8 @@ h1, h2, h3, p, a {
         padding: 0.5%;
         background-color: white;
         border-radius: 1.5rem;
-        flex-basis: 30%;
+        -ms-flex-preferred-size: 30%;
+            flex-basis: 30%;
         box-shadow: 0 0 16px gray;
     
     }
@@ -239,9 +302,8 @@ h1, h2, h3, p, a {
     }
 
     .hotel:hover {
-        -webkit-transform: scale(1.05); /* Chrome */
-        -moz-transform: scale(1.05); /* Firefox */
-        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+                transform: scale(1.05);
         cursor: pointer;
     }
 
@@ -249,7 +311,9 @@ h1, h2, h3, p, a {
 
     .populaire {
 
-        flex-basis: 33%;
+        -ms-flex-preferred-size: 33%;
+
+            flex-basis: 33%;
         height: 650px;
         border-radius: 1.5rem;
         background-color: #f2f2f2;
@@ -258,9 +322,15 @@ h1, h2, h3, p, a {
     }
 
     .titre-populaire {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         font-size: 110%;
     }
 
@@ -292,14 +362,16 @@ h1, h2, h3, p, a {
     .hotel2 img {
 
         background-color: white;
-        transition-duration: 0.1s;
+        -webkit-transition-duration: 0.1s;
+                transition-duration: 0.1s;
         cursor: pointer;
         float: left;
         width: 35%;
         height: 92%;
         border-radius: 15px 0 0 15px;
         margin: 2px 15px 2px 0px;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
     }
 
     .hotel2 a {
@@ -308,9 +380,8 @@ h1, h2, h3, p, a {
     }
  
     .hotel2:hover {
-        -webkit-transform: scale(1.05); /* Chrome */
-        -moz-transform: scale(1.05); /* Firefox */
-        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+                transform: scale(1.05);
         cursor: pointer;
     }
 
@@ -322,11 +393,20 @@ h1, h2, h3, p, a {
   }
   
   .containerActivites {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: 495px;
     margin-top: 2%;
     margin-bottom: 6%;
@@ -349,9 +429,8 @@ h1, h2, h3, p, a {
   }
 
   .Activite:hover {
-    -webkit-transform: scale(1.05); /* Chrome */
-    -moz-transform: scale(1.05); /* Firefox */
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
     cursor: pointer;
   }
   
@@ -363,7 +442,8 @@ h1, h2, h3, p, a {
   
   .Activite img {
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 1.5rem 1.5rem 0 0;
   }
   
@@ -407,6 +487,8 @@ footer {
   }
   
     .bloc-footer {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         max-width: 100%;
         padding: 0 10px;
@@ -440,8 +522,12 @@ footer {
     /* Menu navigation */
 
     .nav {
-        order: 1;
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
@@ -470,7 +556,9 @@ footer {
     /* Filtres */    
 
     .filtre-list {
+        display: -ms-grid;
         display: grid;
+        padding: 1%;
     }
 
     .filtre-list h2 {
@@ -480,11 +568,17 @@ footer {
     /* Hotels */
 
     #hebergements {
-        flex-direction: column-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
     }
 
     .part2 {
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
     }
 
     .hotel p {
@@ -494,10 +588,13 @@ footer {
     /* Activites */
 
     .containerActivites {
+        display: -ms-grid;
         display: grid;
         height: auto;
         margin-bottom: 25px;
-        justify-content: normal;
+        -webkit-box-pack: normal;
+            -ms-flex-pack: normal;
+                justify-content: normal;
     }
         
     .blocActivite {
@@ -524,6 +621,7 @@ footer {
     /*  Footer  */
 
     .bloc-footer {
+        display: -ms-grid;
         display: grid;
     }
 
@@ -546,7 +644,9 @@ footer {
     /* FILTRES */
 
   .filtre-list {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
   }
 
