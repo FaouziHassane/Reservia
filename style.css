@@ -1,10 +1,13 @@
+/* Paramètres page */
+
 @font-face {
     font-family: "Raleway";
     src: url(static/Raleway-Regular.ttf);
 }
 
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -118,6 +121,12 @@ h1, h2, h3, p, a {
     color: black;
 }
 
+.search::-ms-input-placeholder {
+    font-size: 120%;
+    font-weight: bold;
+    color: black;
+}
+
 .search::placeholder {
     font-size: 120%;
     font-weight: bold;
@@ -178,6 +187,7 @@ h1, h2, h3, p, a {
 .filtre:hover {
     background-color: lightgrey;
     -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
             transform: scale(1.05);
     cursor: pointer;
 }
@@ -262,7 +272,8 @@ h1, h2, h3, p, a {
         border-radius: 1.5rem;
         -ms-flex-preferred-size: 30%;
             flex-basis: 30%;
-        box-shadow: 0 0 16px gray;
+        -webkit-box-shadow: 0 0 16px gray;
+                box-shadow: 0 0 16px gray;
     
     }
 
@@ -303,6 +314,7 @@ h1, h2, h3, p, a {
 
     .hotel:hover {
         -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
                 transform: scale(1.05);
         cursor: pointer;
     }
@@ -352,10 +364,12 @@ h1, h2, h3, p, a {
         background: white;
         border-radius: 20px;
         padding: 3px;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         margin: 0px 0px 30px 0px;
         height: 165px;
-        box-shadow: 0 0 16px gray;
+        -webkit-box-shadow: 0 0 16px gray;
+                box-shadow: 0 0 16px gray;
 
     }
 
@@ -363,6 +377,7 @@ h1, h2, h3, p, a {
 
         background-color: white;
         -webkit-transition-duration: 0.1s;
+             -o-transition-duration: 0.1s;
                 transition-duration: 0.1s;
         cursor: pointer;
         float: left;
@@ -381,6 +396,7 @@ h1, h2, h3, p, a {
  
     .hotel2:hover {
         -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
                 transform: scale(1.05);
         cursor: pointer;
     }
@@ -410,7 +426,8 @@ h1, h2, h3, p, a {
     height: 495px;
     margin-top: 2%;
     margin-bottom: 6%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   
   .blocActivite {
@@ -420,7 +437,8 @@ h1, h2, h3, p, a {
   .Activite {
     background-color: white;
     border-radius: 1.5rem;
-    box-shadow: 0 0 16px gray;
+    -webkit-box-shadow: 0 0 16px gray;
+            box-shadow: 0 0 16px gray;
   }
   
   .Activite a {
@@ -430,6 +448,7 @@ h1, h2, h3, p, a {
 
   .Activite:hover {
     -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
             transform: scale(1.05);
     cursor: pointer;
   }
@@ -492,7 +511,8 @@ footer {
         display: flex;
         max-width: 100%;
         padding: 0 10px;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
     }
 
     .interieur-bloc {
@@ -615,7 +635,8 @@ footer {
         padding: 8px 0px 5px 20px;
         border-radius: 0 0 1.5rem 1.5rem;
         border-color: transparent;
-        box-shadow: 0 5px 16px #0000002e;
+        -webkit-box-shadow: 0 5px 16px #0000002e;
+                box-shadow: 0 5px 16px #0000002e;
     }
     
     /*  Footer  */
