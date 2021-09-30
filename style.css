@@ -450,6 +450,10 @@ footer {
         text-align: center;
     }
 
+    #logo-haut {
+        margin-top: 2.5%;
+    }
+
     /* Formulaire de Recherche */
 
     .submit {
