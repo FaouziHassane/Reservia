@@ -1,8 +1,7 @@
 /* Paramètres page */
 
 * {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -23,17 +22,10 @@ h1, h2, h3, p, a {
 }   
 
 .menu-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
     margin-top: 0.5%;
     
     } 
@@ -42,7 +34,7 @@ h1, h2, h3, p, a {
     color: inherit;
     margin-left: 1%;
     text-decoration: none;
-    padding: 1.5rem;
+    padding: 20px;
     border-top: 2px solid transparent;
 }
 
@@ -56,8 +48,6 @@ h1, h2, h3, p, a {
 }
 
 .nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 }
 
@@ -65,61 +55,33 @@ h1, h2, h3, p, a {
 /*Formulaire de Recherche*/
 
 .form {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     margin-bottom: 0.5%;
 }
 
 .form i {
-    padding: 1rem;
+    padding: 15px;
     background-color: lightgray;
     border: 1px solid #f2f2f2;
     border-radius: 15px 0 0 15px;
 }
 
 .search {
-    padding: 1rem;
+    padding: 15px;
     padding-right: 1px;
     border: 1px solid transparent;
 }
 
 .submit {
-    padding: 0.9rem;
+    padding: 13px;
     border-radius: 0 15px 15px 0;
     background-color: #0065fc;
     color: white;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     border: 1px solid #0065fc;   
-}
-
-.search::-webkit-input-placeholder {
-    font-size: 120%;
-    font-weight: bold;
-    color: black;
-}
-
-.search::-moz-placeholder {
-    font-size: 120%;
-    font-weight: bold;
-    color: black;
-}
-
-.search:-ms-input-placeholder {
-    font-size: 120%;
-    font-weight: bold;
-    color: black;
-}
-
-.search::-ms-input-placeholder {
-    font-size: 120%;
-    font-weight: bold;
-    color: black;
 }
 
 .search::placeholder {
@@ -137,14 +99,14 @@ h1, h2, h3, p, a {
 .filtre-list {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
 .filtre i {
     border-radius: 50%;
-    width: 3rem;
-    height: 3rem;
+    width: 50px;
+    height: 50px;
     background-color: lightblue;
     color: blue;
     margin: -2px;
@@ -158,29 +120,29 @@ h1, h2, h3, p, a {
     display: flex;
     align-items: center;
     border: 2px solid lightgrey;
-    border-radius: 2rem;
-    padding-right: 1rem;
+    border-radius: 25px;
+    padding-right: 15px;
     font-weight: bold;
     font-family: "Raleway";
     cursor: pointer;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
 }
 
 .filtre:hover {
     background-color: lightgrey;
     transform: scale(1.05);
     cursor: pointer;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
 }
 
 /*Infos Message*/
 
 .infos-message {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 1rem;
+    align-items: center;
+    gap: 5px;
     margin-bottom: 1%;
 }
 
@@ -188,17 +150,11 @@ h1, h2, h3, p, a {
     color: blue;
     border-radius: 50%;
     border: 1px solid lightgrey;
-    width: 2rem;
-    height: 2rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    width: 30px;
+    height: 30px;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 /* HOTELS */
@@ -212,13 +168,13 @@ h1, h2, h3, p, a {
 
     .hebergement {
         flex-basis: 66%;
-        height: 650px;
+        height: 680px;
         margin-right: 0.5%;
-        border-radius: 1.5rem;
+        border-radius: 20px;
         background-color: #f2f2f2;
         padding-left: 1%;
         padding-right: 1%;
-    }
+}
 
     .part2 {
         display: flex;
@@ -227,22 +183,22 @@ h1, h2, h3, p, a {
     }
 
     .part2 img {
-        border-radius: 1.5rem 1.5rem 0 0;
+        border-radius: 20px 20px 0 0;
         cursor: pointer;
         width: 100%;
         height: 120px;
         object-fit: cover;
-    }
+}
 
     .hotel {
         margin: 1%;
         padding: 0.5%;
         background-color: white;
-        border-radius: 1.5rem;
+        border-radius: 20px;
         flex-basis: 30%;
         box-shadow: 0 0 16px gray;
         padding-bottom: 10px;
-    }
+}
 
     .hotel a {
         text-decoration: none;
@@ -266,7 +222,7 @@ h1, h2, h3, p, a {
     }
 
     .part2 h3, p {
-        padding-left: 0.5rem;
+        padding-left: 2%;
     }
 
     .part2 p {
@@ -276,7 +232,7 @@ h1, h2, h3, p, a {
     .afficher-plus {
         text-decoration: none;
         color: black;
-        padding-left: 0.5rem;
+        padding-left: 2%;
     }
 
     .hotel:hover {
@@ -288,21 +244,16 @@ h1, h2, h3, p, a {
 
     .populaire {
         flex-basis: 33%;
-        height: 650px;
-        border-radius: 1.5rem;
+        height: 680px;
+        border-radius: 20px;
         background-color: #f2f2f2;
         padding: 0 20px 0 20px;
-        
-    }
+}
 
     .titre-populaire {
         display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
+        align-items: center;
+        justify-content: space-between;
         font-size: 110%;
     }
 
@@ -324,29 +275,24 @@ h1, h2, h3, p, a {
         background: white;
         border-radius: 20px;
         padding: 3px;
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
+        box-sizing: border-box;
         margin: 0px 0px 30px 0px;
         height: 165px;
-        -webkit-box-shadow: 0 0 16px gray;
-                box-shadow: 0 0 16px gray;
+        box-shadow: 0 0 16px gray;
 
     }
 
     .hotel2 img {
 
         background-color: white;
-        -webkit-transition-duration: 0.1s;
-             -o-transition-duration: 0.1s;
-                transition-duration: 0.1s;
+        transition-duration: 0.1s;
         cursor: pointer;
         float: left;
         width: 35%;
         height: 92%;
         border-radius: 15px 0 0 15px;
         margin: 2px 15px 2px 0px;
-        -o-object-fit: cover;
-           object-fit: cover;
+        object-fit: cover;
     }
 
     .hotel2 a {
@@ -355,9 +301,7 @@ h1, h2, h3, p, a {
     }
  
     .hotel2:hover {
-        -webkit-transform: scale(1.05);
-            -ms-transform: scale(1.05);
-                transform: scale(1.05);
+        transform: scale(1.05);
         cursor: pointer;
     }
 
@@ -385,9 +329,9 @@ h1, h2, h3, p, a {
   
   .Activite {
     background-color: white;
-    border-radius: 1.5rem;
+    border-radius: 20px;
     box-shadow: 0 0 16px gray;
-  }
+}
   
   .Activite a {
       text-decoration: none;
@@ -401,15 +345,15 @@ h1, h2, h3, p, a {
   
   .titresection {
     color: black;
-    font-size: 1.3em;
-    padding-left: 8px;
+    font-size: bold;
+    padding-left: 0.5%;
   }
   
   .Activite img {
     width: 100%;
     object-fit: cover;
-    border-radius: 1.5rem 1.5rem 0 0;
-  }
+    border-radius: 20px 20px 0 0;
+}
   
   .activite1et4img {
     height: 440px;
@@ -450,13 +394,10 @@ footer {
   }
   
     .bloc-footer {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         max-width: 100%;
         padding: 0 10px;
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
+        box-sizing: border-box;
     }
 
     .interieur-bloc {
@@ -465,8 +406,7 @@ footer {
 
     .titre-footer {
         display: block;
-        font-size: 1.3em;
-        font-weight: bold;
+        font-size: bold;
     }
 
     .interieur-bloc a {
@@ -486,12 +426,8 @@ footer {
     /* Menu navigation */
 
     .nav {
-        -webkit-box-ordinal-group: 2;
-            -ms-flex-order: 1;
-                order: 1;
+        order: 1;
         width: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
     }
 
@@ -515,6 +451,7 @@ footer {
         border-radius: 15px;
         background-color: #0065fc;
         color: white;
+        cursor: pointer;
     }
 
     /* Filtres */    
@@ -531,17 +468,11 @@ footer {
     /* Hotels */
 
     #hebergements {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: reverse;
-            -ms-flex-direction: column-reverse;
-                flex-direction: column-reverse;
+        flex-direction: column-reverse;
     }
 
     .part2 {
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                    flex-direction: column;
+        flex-direction: column;
     }
 
     .hotel p {
@@ -551,13 +482,10 @@ footer {
     /* Activites */
 
     .containerActivites {
-        display: -ms-grid;
         display: grid;
         height: auto;
         margin-bottom: 25px;
-        -webkit-box-pack: normal;
-            -ms-flex-pack: normal;
-                justify-content: normal;
+        justify-content: normal;
     }
         
     .blocActivite {
@@ -576,16 +504,14 @@ footer {
 
     .nomactivite {
         padding: 8px 0px 5px 20px;
-        border-radius: 0 0 1.5rem 1.5rem;
+        border-radius: 0 0 20px 20px;
         border-color: transparent;
-        -webkit-box-shadow: 0 5px 16px #0000002e;
-                box-shadow: 0 5px 16px #0000002e;
-    }
+        box-shadow: 0 5px 16px #0000002e;
+}
     
     /*  Footer  */
 
     .bloc-footer {
-        display: -ms-grid;
         display: grid;
     }
 
@@ -620,7 +546,7 @@ footer {
 }
 
 
-/* Grand écran */
+/* Grand écran : Desktop */
 
 @media screen and (max-width: 1600px) {
     body {
