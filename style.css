@@ -188,8 +188,8 @@ h1, h2, h3, p, a {
 }
 
     .hotel {
-        margin: 1%;
-        padding: 0.5%;
+        margin: 5px;
+        padding: 3px;
         background-color: white;
         border-radius: 20px;
         flex-basis: 30%;
@@ -203,7 +203,7 @@ h1, h2, h3, p, a {
     }
 
     .etoiles {
-        margin: 2%;
+        margin: 3px;
     }
 
     .blue {
@@ -215,11 +215,11 @@ h1, h2, h3, p, a {
     }
 
     .hebergement h1 {
-        padding-left: 1%;
+        padding-left: 15px;
     }
 
     .part2 h3, p {
-        padding-left: 2%;
+        padding-left: 5px;
     }
 
     .part2 p {
@@ -229,7 +229,7 @@ h1, h2, h3, p, a {
     .afficher-plus {
         text-decoration: none;
         color: black;
-        padding-left: 2%;
+        padding-left: 15px;
     }
 
     .hotel:hover {
@@ -257,7 +257,7 @@ h1, h2, h3, p, a {
     }
 
     .populaire h1 {
-        padding-left: 1%;
+        padding-left: 10px;
     }
 
     .part3 {
@@ -319,8 +319,8 @@ h1, h2, h3, p, a {
     align-content: space-between;
     justify-content: space-between;
     height: 495px;
-    margin-top: 2%;
-    margin-bottom: 6%;
+    margin-top: 20px;
+    margin-bottom: 90px;
     box-sizing: border-box;
   }
   
@@ -451,7 +451,7 @@ footer {
     /* Hôtels Populaires */
 
     .info-image h3, p {
-        margin: 3%;
+        margin: 2px;
     }
 }
 
@@ -474,12 +474,12 @@ footer {
     }
 
     #logo-haut {
-        margin-top: 2.5%;
+        margin-top: 5px;
     }
 
 
     .menu-nav {
-        margin-bottom: 0.5%;
+        margin-bottom: 10px;
         } 
     
     .menu-nav a {
@@ -511,12 +511,12 @@ footer {
     .filtre-list {
         display: flex;
         flex-direction: column;
-        padding: 1%;
+        padding: 10px;
         align-items: flex-start;
     }
 
     .filtre-list h2 {
-        margin-bottom: 1px;
+        margin: 1px 1px 0 0;
     }
 
     /* Hotels */
