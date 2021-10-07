@@ -130,8 +130,6 @@ h1, h2, h3, p, a {
     background-color: lightgrey;
     transform: scale(1.05);
     cursor: pointer;
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
 }
 
 /*Infos Message*/
@@ -235,8 +233,6 @@ h1, h2, h3, p, a {
     .hotel:hover {
         transform: scale(1.05);
         cursor: pointer;
-        -webkit-transform: scale(1.05);
-        -moz-transform: scale(1.05);
 }
 
     /* Hôtels Populaires */
@@ -302,8 +298,6 @@ h1, h2, h3, p, a {
     .hotel2:hover {
         transform: scale(1.05);
         cursor: pointer;
-        -webkit-transform: scale(1.05);
-        -moz-transform: scale(1.05);
 }
 
 /* ACTIVITES */
@@ -340,15 +334,12 @@ h1, h2, h3, p, a {
   .Activite:hover {
     transform: scale(1.05);
     cursor: pointer;
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
 }
   
   .titresection {
     color: black;
-    font-size: bold;
-    padding: auto;
-    margin: auto;
+    font-size:x-large;
+    margin: 30px 10px 0 0;
   }
   
   .Activite img {
@@ -409,7 +400,7 @@ footer {
 
     .titre-footer {
         display: flex;
-        font-size: bold;
+        font-size: large;
     }
 
     .interieur-bloc a {
