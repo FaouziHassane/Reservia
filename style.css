@@ -1,11 +1,8 @@
 /* Paramètres page */
 
-* {
-    box-sizing: border-box;
-}
-
 body {
-    width: 96%;
+    width: 98%;
+    margin: auto;
 }
 
 h1, h2, h3, p, a {
@@ -31,10 +28,10 @@ h1, h2, h3, p, a {
 
 .menu-nav a {
     color: inherit;
-    margin-left: 20px;
+    margin-left: 1%;
     text-decoration: none;
     padding: 20px;
-    border-top: 2px solid transparent;
+    border-top: 3px solid transparent;
 }
 
 .menu-nav a:hover {
@@ -44,6 +41,10 @@ h1, h2, h3, p, a {
 
 .inscrire a {
     color: blue;
+}
+
+.inscrire a:hover {
+    border-top: 2px solid transparent;
 }
 
 .nav {
@@ -56,6 +57,7 @@ h1, h2, h3, p, a {
 .form {
     display: flex;
     align-items: center;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
@@ -102,6 +104,13 @@ h1, h2, h3, p, a {
     flex-wrap: wrap;
 }
 
+.filtres {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
 .filtre i {
     border-radius: 50%;
     width: 50px;
@@ -138,7 +147,7 @@ h1, h2, h3, p, a {
     display: flex;
     align-items: center;
     gap: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 1%;
 }
 
 .infos-message i {
@@ -163,12 +172,12 @@ h1, h2, h3, p, a {
 
     .hebergement {
         flex-basis: 66%;
-        height: 680px;
-        margin-right: 10px;
+        height: 690px;
+        margin-right: 0.5%;
         border-radius: 20px;
         background-color: #f2f2f2;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 1%;
+        padding-right: 1%;
 }
 
     .part2 {
@@ -186,8 +195,8 @@ h1, h2, h3, p, a {
 }
 
     .hotel {
-        margin: 5px;
-        padding: 3px;
+        margin: 1%;
+        padding: 0.5%;
         background-color: white;
         border-radius: 20px;
         flex-basis: 30%;
@@ -201,7 +210,7 @@ h1, h2, h3, p, a {
     }
 
     .etoiles {
-        margin: 3px;
+        margin: 2%;
     }
 
     .blue {
@@ -212,12 +221,13 @@ h1, h2, h3, p, a {
         color: lightgray;
     }
 
-    .hebergement h1 {
+    .hebergement h2 {
         padding-left: 15px;
     }
 
     .part2 h3, p {
-        padding-left: 5px;
+        padding-left: 1px;
+        margin: 10px;
     }
 
     .part2 p {
@@ -225,9 +235,14 @@ h1, h2, h3, p, a {
     }
 
     .afficher-plus {
+        padding-left: 20px;
+        padding-top: 40px;
+        font-size: large;
+    }
+
+    .afficher-plus a {
         text-decoration: none;
         color: black;
-        padding-left: 15px;
     }
 
     .hotel:hover {
@@ -239,10 +254,11 @@ h1, h2, h3, p, a {
 
     .populaire {
         flex-basis: 33%;
-        height: 680px;
+        height: 690px;
         border-radius: 20px;
         background-color: #f2f2f2;
-        padding: 0 20px 0 20px;
+        padding: 0 30px 0 30px;
+        margin-left: 10px;
 }
 
     .titre-populaire {
@@ -252,12 +268,12 @@ h1, h2, h3, p, a {
         font-size: 110%;
     }
 
-    .populaire h1 {
-        padding-left: 10px;
+    .populaire h2 {
+        padding-left: 5px;
     }
 
     .part3 {
-        position: relative;
+        box-sizing: border-box;
     }
 
     .part3 p {
@@ -266,12 +282,11 @@ h1, h2, h3, p, a {
 
     .hotel2 {
         
-        width: 100%;
+        width: 95%;
         background: white;
         border-radius: 20px;
-        padding: 3px;
-        box-sizing: border-box;
-        margin: 0px 0px 30px 0px;
+        padding: 3px; 
+        margin-bottom: 35px;
         height: 165px;
         box-shadow: 0 0 16px gray;
 
@@ -284,7 +299,7 @@ h1, h2, h3, p, a {
         cursor: pointer;
         float: left;
         width: 35%;
-        height: 92%;
+        height: 97%;
         border-radius: 15px 0 0 15px;
         margin: 2px 15px 2px 0px;
         object-fit: cover;
@@ -298,12 +313,21 @@ h1, h2, h3, p, a {
     .hotel2:hover {
         transform: scale(1.05);
         cursor: pointer;
-}
+    }
+
+    .hotel2 h3, p {
+        margin: 10px 0 0 0;
+    }
+
+    .etoilespop {
+        padding-top: 50px;
+    }
 
 /* ACTIVITES */
 
-#Activite {
-    width: 80%;
+#Activites {
+    width: 98%;
+    margin:auto;
   }
   
   .containerActivites {
@@ -311,8 +335,8 @@ h1, h2, h3, p, a {
     flex-wrap: wrap;
     justify-content: space-between;
     height: 495px;
-    margin-top: 20px;
-    margin-bottom: 90px;
+    margin-top: 2%;
+    margin-bottom: 6%;
     box-sizing: border-box;
   }
   
@@ -413,8 +437,9 @@ footer {
 
 /* Grand écran : Desktop */
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1440px) {
     body {
+        max-width: 1440px;
         margin: auto;
     }
 }
@@ -430,10 +455,17 @@ footer {
         margin-bottom: 15px;
     }
 
+    /* Formulaire de recherche */
+
+    .form {
+        justify-content: center;
+        margin: 40px 0 0 0;
+    }
+
     /* FILTRES */
 
   .filtre-list {
-    align-items: center;
+    display: inline;
     width: 100%;
   }
 
@@ -442,12 +474,16 @@ footer {
     .info-image h3, p {
         margin: 2px;
     }
+
+    .etoilespop {
+        padding-top: 15px;
+    }
 }
 
 
 /* Responsive Mobile */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 765px) {
 
     /* Menu navigation */
 
@@ -463,9 +499,8 @@ footer {
     }
 
     #logo-haut {
-        margin-top: 5px;
+        margin-top: 2.5%;
     }
-
 
     .menu-nav {
         margin-bottom: 10px;
@@ -481,8 +516,15 @@ footer {
         color: #0065fc;  
     }
 
+    .inscrire a:hover {
+        border-bottom: 2px solid transparent;
+    }
+
     /* Formulaire de Recherche */
 
+    .form {
+        justify-content: center;
+    }
     .submit {
         display: none;
     }
@@ -499,13 +541,22 @@ footer {
 
     .filtre-list {
         display: flex;
-        flex-direction: column;
-        padding: 10px;
+        flex-wrap: wrap;
+        padding: 5px;
         align-items: flex-start;
     }
 
+    .filtres {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .filtre {
+        margin: 5px;
+    }
+
     .filtre-list h2 {
-        margin: 1px 1px 0 0;
+        margin: 1px 0 0 10px;
     }
 
     /* Hotels */
@@ -517,6 +568,7 @@ footer {
     .hebergement {
         margin-top: 25px;
         margin-bottom: 25px;
+        background-color: transparent;
     }
 
     .part2 {
@@ -525,6 +577,10 @@ footer {
 
     .hotel p {
         margin: 3px;
+    }
+
+    .hotel {
+        box-shadow: 0 0 9px lightgray;
     }
 
     /* Activites */
