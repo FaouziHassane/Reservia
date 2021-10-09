@@ -31,7 +31,7 @@ h1, h2, h3, p, a {
     margin-left: 1%;
     text-decoration: none;
     padding: 20px;
-    border-top: 3px solid transparent;
+    border-top: 2px solid transparent;
 }
 
 .menu-nav a:hover {
@@ -173,7 +173,7 @@ h1, h2, h3, p, a {
     .hebergement {
         flex-basis: 66%;
         height: 690px;
-        margin-right: 0.5%;
+        margin-right: 20px;
         border-radius: 20px;
         background-color: #f2f2f2;
         padding-left: 1%;
@@ -258,47 +258,40 @@ h1, h2, h3, p, a {
         border-radius: 20px;
         background-color: #f2f2f2;
         padding: 0 30px 0 30px;
-        margin-left: 10px;
+        margin-left: 20px;
 }
 
     .titre-populaire {
         display: flex;
         align-items: center;
-        justify-content: space-between;
         font-size: 110%;
     }
 
     .populaire h2 {
-        padding-left: 5px;
-    }
-
-    .part3 {
-        box-sizing: border-box;
+        padding-left: 25px;
+        margin-right: 130px;
     }
 
     .part3 p {
         font-weight: normal;
     }
 
-    .hotel2 {
-        
-        width: 95%;
+    .hotel2 { 
+        width: 85%;
         background: white;
         border-radius: 20px;
         padding: 3px; 
         margin-bottom: 35px;
         height: 165px;
         box-shadow: 0 0 16px gray;
-
     }
 
     .hotel2 img {
-
         background-color: white;
         transition-duration: 0.1s;
         cursor: pointer;
         float: left;
-        width: 35%;
+        width: 43%;
         height: 97%;
         border-radius: 15px 0 0 15px;
         margin: 2px 15px 2px 0px;
@@ -315,19 +308,28 @@ h1, h2, h3, p, a {
         cursor: pointer;
     }
 
-    .hotel2 h3, p {
-        margin: 10px 0 0 0;
+    .hotel2 {
+        margin-left: 25px;
+    }
+
+    .part3 h3 {
+        margin: 10px 0 0 200px;
+    }
+
+    .part3 p {
+        margin: 10px 0 0 200px;
     }
 
     .etoilespop {
         padding-top: 50px;
+        margin-left: 200px;
     }
 
 /* ACTIVITES */
 
 #Activites {
-    width: 98%;
-    margin:auto;
+    width: 100%;
+    margin: auto;
   }
   
   .containerActivites {
@@ -439,14 +441,13 @@ footer {
 
 @media screen and (max-width: 1440px) {
     body {
-        max-width: 1440px;
         margin: auto;
     }
 }
 
 /* Responsive Tablette */
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1025px) {
 
     /* Titre haut de page */
 
@@ -464,22 +465,86 @@ footer {
 
     /* FILTRES */
 
-  .filtre-list {
-    display: inline;
-    width: 100%;
-  }
+    .filtre-list {
+        display: flex;
+        width: 100%;
+      }
 
-    /* Hôtels Populaires */
+      .filtre-list h2 {
+          margin-bottom: 0px;
+          margin-top: 5px;
+      }
 
-    .info-image h3, p {
-        margin: 2px;
+    .filtres {
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+
+    /* Hôtels populaires */
+    
+    .hotel2 {
+        margin-left: 1px;
+    }
+    
+    .populaire {
+        margin: 1px 0 0 0;
+        height: 710px;
+    }
+
+    .hebergement {
+        height: 710px;
+    }
+    
+    .populaire h2 {
+        font-size: 25px;
+        padding-left: 0px;
+        margin-right: 10px;
+    }
+
+    .hotel2 img {
+        width: 30%;
+        object-fit: cover;
+    }
+
+    .part3 h3 {
+        font-size: 16px;
+        margin: 10px 0 0 20px;
+    }
+
+    .part3 p {
+        font-size: 16px;
+        margin: 0px 0 0 20px;
     }
 
     .etoilespop {
-        padding-top: 15px;
+        padding-top: 40px;
+        margin-left: 20px;
+    }
+    
+    .hotel2 {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .hotel2 p {
+        padding-top: 10px;
+    }
+
+    /* Activités */
+
+    .Activite img {
+        object-fit: cover;
+    }
+
+    #Activites {
+        margin-bottom: 80px;
+    }
+
+    .titresection {
+        margin-bottom: 20px;
     }
 }
-
 
 /* Responsive Mobile */
 
@@ -579,8 +644,60 @@ footer {
         margin: 3px;
     }
 
+    .hotel h3 {
+        margin-left: 4px;
+    }
+
     .hotel {
         box-shadow: 0 0 9px lightgray;
+    }
+
+    /* Populaire */
+
+    .hotel2 {
+        margin-left: 1px;
+    }
+
+    .populaire {
+        margin: 15px 0 0 0;
+        border-radius: 0px;
+    }
+
+    .populaire h2 {
+        font-size: 20px;
+        padding-left: 5px;
+        margin-right: 80px;
+    }
+
+    .hotel2 img {
+        width: 44%;
+    }
+
+    .part3 h3 {
+        font-size: 16px;
+        margin: 10px 0 0 20px;
+    }
+
+    .part3 p {
+        font-size: 14px;
+        margin: 0px 0 0 20px;
+    }
+
+    .etoilespop {
+        padding-top: 10px;
+        margin-left: 20px;
+    }
+
+    .hotel2 {
+        width: 95%;
+    }
+
+    .hotel2 p {
+        padding-top: 10px;
+    }
+
+    .etoilespop {
+        padding-top: 50px;
     }
 
     /* Activites */
@@ -614,7 +731,7 @@ footer {
         border-radius: 0 0 20px 20px;
         border-color: transparent;
         box-shadow: 0 5px 16px #0000002e;
-}
+    }
     
     /*  Footer  */
 
@@ -625,5 +742,5 @@ footer {
 
     .interieur-bloc {
         width: auto;
-    }
-}  
+    } 
+}    
