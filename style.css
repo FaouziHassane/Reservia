@@ -683,11 +683,6 @@ footer {
         margin: 0px 0 0 20px;
     }
 
-    .etoilespop {
-        padding-top: 10px;
-        margin-left: 20px;
-    }
-
     .hotel2 {
         width: 95%;
     }
@@ -697,7 +692,8 @@ footer {
     }
 
     .etoilespop {
-        padding-top: 50px;
+        padding-top: 25px;
+        margin-left: 20px;
     }
 
     /* Activites */
