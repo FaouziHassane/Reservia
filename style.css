@@ -291,7 +291,7 @@ h1, h2, h3, p, a {
         transition-duration: 0.1s;
         cursor: pointer;
         float: left;
-        width: 43%;
+        width: 35%;
         height: 97%;
         border-radius: 15px 0 0 15px;
         margin: 2px 15px 2px 0px;
@@ -313,16 +313,19 @@ h1, h2, h3, p, a {
     }
 
     .part3 h3 {
-        margin: 10px 0 0 200px;
+        margin: 5px 0 0 0;
+        padding-left: 5%;
+        padding-right: 12%;
     }
 
     .part3 p {
-        margin: 10px 0 0 200px;
+        margin: 5px 0 0 0;
+        padding-left: 5%;
     }
 
     .etoilespop {
-        padding-top: 50px;
-        margin-left: 200px;
+        padding-top: 10%;
+        padding-left: 5%;
     }
 
 /* ACTIVITES */
@@ -514,11 +517,11 @@ footer {
 
     .part3 p {
         font-size: 16px;
-        margin: 0px 0 0 20px;
+        margin: 10px 0 0 20px;
     }
 
     .etoilespop {
-        padding-top: 40px;
+        padding-top: 10%;
         margin-left: 20px;
     }
     
@@ -528,7 +531,7 @@ footer {
     }
 
     .hotel2 p {
-        padding-top: 10px;
+        padding-top: 3px;
     }
 
     /* Activités */
